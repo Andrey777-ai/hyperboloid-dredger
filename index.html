@@ -3,183 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гиперболоидный земснаряд и эко-станция — полная экосистема</title>
+    <title>Гиперболоидный земснаряд — размыв и углубление русел рек</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Segoe UI',Roboto,system-ui,sans-serif;background:#f4f7fc;color:#1a2634;line-height:1.7;padding:30px 20px}
-        .container{max-width:1200px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 20px 60px rgba(0,20,50,.10);padding:50px 55px}
-        h1{font-size:2.8rem;font-weight:700;color:#0b1e33;letter-spacing:-0.5px;margin-bottom:6px}
-        .subhead{font-size:1.25rem;color:#2c3e66;margin-bottom:30px;border-left:4px solid #1a6bc4;padding-left:20px;background:#f0f5ff;border-radius:0 12px 12px 0;padding:16px 24px}
-        .badge{display:inline-block;background:#eef3fa;color:#1e3a6f;font-size:.85rem;font-weight:600;padding:5px 16px;border-radius:30px;margin-right:12px;margin-bottom:14px}
-        h2{font-size:1.9rem;margin-top:50px;margin-bottom:18px;color:#0a2647;border-bottom:2px solid #e6edf6;padding-bottom:10px}
-        h3{font-size:1.3rem;margin-top:32px;margin-bottom:12px;color:#1a3a66}
+        body{font-family:'Segoe UI',Roboto,sans-serif;background:#f4f7fc;color:#1a2634;line-height:1.7;padding:30px 20px}
+        .container{max-width:1000px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 20px 60px rgba(0,20,50,.10);padding:50px 55px}
+        h1{font-size:2.6rem;font-weight:700;color:#0b1e33;margin-bottom:6px}
+        .subhead{font-size:1.2rem;color:#2c3e66;margin-bottom:30px;border-left:4px solid #1a6bc4;padding-left:20px;background:#f0f5ff;border-radius:0 12px 12px 0;padding:14px 22px}
+        .badge{display:inline-block;background:#eef3fa;color:#1e3a6f;font-size:.85rem;font-weight:600;padding:4px 16px;border-radius:30px;margin-right:12px;margin-bottom:14px}
+        h2{font-size:1.7rem;margin-top:40px;margin-bottom:16px;color:#0a2647;border-bottom:2px solid #e6edf6;padding-bottom:8px}
+        h3{font-size:1.2rem;margin-top:28px;margin-bottom:10px;color:#1a3a66}
         p{margin-bottom:16px}
         ul,ol{margin:12px 0 20px 30px}
-        li{margin-bottom:8px}
-        .highlight-box{background:#e6f0ff;border-radius:18px;padding:24px 30px;margin:24px 0;border-left:6px solid #1a6bc4}
+        li{margin-bottom:6px}
+        .highlight-box{background:#e6f0ff;border-radius:18px;padding:22px 28px;margin:24px 0;border-left:6px solid #1a6bc4}
         .highlight-box strong{color:#0b2b5e}
-        .success-box{background:#e8f8ee;border-radius:18px;padding:24px 30px;margin:24px 0;border-left:6px solid #27ae60}
-        .success-box strong{color:#1e6b3d}
-        .warning-box{background:#fff3e6;border-radius:18px;padding:24px 30px;margin:24px 0;border-left:6px solid #e67e22}
-        .warning-box strong{color:#7a3d00}
         .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:16px 0 24px 0}
         .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin:16px 0 24px 0}
-        .grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin:16px 0 24px 0}
-        .card{background:#f9fbfe;border-radius:16px;padding:20px 24px;border:1px solid #e6edf6;transition:0.2s}
-        .card:hover{box-shadow:0 6px 20px rgba(26,107,196,0.10);border-color:#b3c9e6}
-        .card h4{font-size:1.05rem;color:#0a2647;margin-bottom:10px}
-        .card ul{margin:8px 0 0 20px}
-        .card ul li{font-size:.95rem;margin-bottom:5px}
-        .tag{background:#e1e9f3;padding:4px 14px;border-radius:30px;font-size:.8rem;color:#1a3b66;display:inline-block;margin:4px 6px 4px 0}
-        .footer{margin-top:50px;padding-top:26px;border-top:1px solid #dce5ef;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#3a4f6b;font-size:.95rem}
+        .card{background:#f9fbfe;border-radius:16px;padding:18px 22px;border:1px solid #e6edf6}
+        .card h4{font-size:1rem;color:#0a2647;margin-bottom:8px}
+        .tag{background:#e1e9f3;padding:3px 14px;border-radius:30px;font-size:.8rem;color:#1a3b66;display:inline-block;margin:4px 6px 4px 0}
+        .footer{margin-top:40px;padding-top:24px;border-top:1px solid #dce5ef;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#3a4f6b;font-size:.95rem}
         .footer a{color:#1a5fb0;text-decoration:none}
         .footer a:hover{text-decoration:underline}
-        .nav{background:#f0f5ff;border-radius:16px;padding:16px 24px;margin-bottom:32px;display:flex;gap:22px;flex-wrap:wrap;align-items:center}
-        .nav a{color:#1a5fb0;text-decoration:none;font-weight:500}
-        .nav a:hover{text-decoration:underline}
-        .nav a.active{color:#0a2647;font-weight:700;border-bottom:2px solid #1a6bc4}
-        table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.92rem}
-        th{background:#eef4fa;padding:11px 14px;text-align:left;border-bottom:2px solid #c0d4eb;color:#0a2647}
-        td{padding:11px 14px;border-bottom:1px solid #e6edf6}
+        table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.95rem}
+        th{background:#eef4fa;padding:10px 14px;text-align:left;border-bottom:2px solid #c0d4eb;color:#0a2647}
+        td{padding:10px 14px;border-bottom:1px solid #e6edf6}
         tr:hover{background:#f9fbfe}
-        .metrics{display:flex;flex-wrap:wrap;gap:24px;margin:20px 0 24px 0}
-        .metric{background:#fff;border:1px solid #e6edf6;border-radius:14px;padding:14px 20px;flex:1;min-width:150px;text-align:center}
-        .metric .value{font-size:1.6rem;font-weight:700;color:#0a2647;display:block}
-        .metric .label{font-size:.8rem;color:#6b7f99;text-transform:uppercase;letter-spacing:0.5px}
-        .pipeline{background:#f0f4fc;border-radius:16px;padding:24px 30px;margin:20px 0;font-family:'Courier New',monospace;font-size:.9rem;line-height:1.8;border-left:4px solid #1a6bc4;overflow-x:auto}
-        .pipeline .stage{color:#1a5fb0;font-weight:600}
-        .pipeline .done{color:#27ae60}
-        .pipeline .new{color:#e67e22;font-weight:700}
-        @media(max-width:900px){.grid-4{grid-template-columns:1fr 1fr}}
-        @media(max-width:700px){.container{padding:28px 22px}h1{font-size:2rem}.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+        @media(max-width:700px){.container{padding:28px 22px}h1{font-size:1.8rem}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
 <div class="container">
-    <!-- Навигация -->
-    <div class="nav">
-        <a href="index.html" class="active">🏠 Главная</a>
-        <a href="report.html">📐 Геометрия</a>
-        <a href="pipeline.html">⚙️ CLI-конвейер</a>
-        <a href="deploy.html">🏭 Производство</a>
-    </div>
-
-
     <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;">
         <span class="badge">🌊 Гидротехника</span>
-        <span class="badge">🐟 Эко-мониторинг</span>
-        <span class="badge">🤖 Искусственный интеллект</span>
-        <span class="badge">📺 Дашборд</span>
+        <span class="badge">⛏️ Дноуглубление</span>
+        <span class="badge">🔬 Гиперболоид</span>
+        <span class="badge">🚢 Земснаряд</span>
         <span class="badge">📆 2026+</span>
     </div>
 
 
-    <h1>Гиперболоидный земснаряд и эко-станция</h1>
-    <div class="subhead">Полная экосистема: от углубления русел до неинвазивного наблюдения за ихтиофауной с искусственным интеллектом</div>
+    <h1>Гиперболоидный земснаряд</h1>
+    <div class="subhead">Размыв и углубление русел рек за счёт ускорения потока в гиперболоидных конструкциях</div>
 
 
-    <!-- Ключевые метрики -->
-    <div class="metrics">
-        <div class="metric">
-            <span class="value">10 848 м³</span>
-            <span class="label">Производительность/смена</span>
-        </div>
-        <div class="metric">
-            <span class="value">$2.3 млн</span>
-            <span class="label">CAPEX земснаряда</span>
-        </div>
-        <div class="metric">
-            <span class="value">1.35 сезона</span>
-            <span class="label">Окупаемость</span>
-        </div>
-        <div class="metric">
-            <span class="value">8 модулей</span>
-            <span class="label">Полный пайплайн</span>
-        </div>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;margin:18px 0 22px 0;">
+        <div><span style="font-weight:600;">💧 Производительность:</span> 8000 м³/смену</div>
+        <div><span style="font-weight:600;">💰 CAPEX:</span> $2.3 млн</div>
+        <div><span style="font-weight:600;">📈 Окупаемость:</span> 1.35 сезона</div>
+        <div><span style="font-weight:600;">👷 Экипаж:</span> 4 человека</div>
     </div>
 
 
-    <!-- О проекте -->
     <section>
         <h2>📌 О проекте</h2>
-        <p><strong>«Гиперболоидный земснаряд и эко-станция»</strong> — это комплексная инженерная система, объединяющая две взаимосвязанные задачи:</p>
-        <ul>
-            <li><strong>Земснаряд</strong> — размыв и углубление русел рек за счёт ускорения потока в гиперболоидных конструкциях. Дешёвый, мобильный, экологичный.</li>
-            <li><strong>Эко-станция</strong> — неинвазивное наблюдение за ихтиофауной с помощью ИИ. Аэрация, убежище для рыбы, сбор научных данных.</li>
-        </ul>
-        <p>Система реализована как <strong>8 автоматизированных модулей</strong>, которые вместе образуют полный инженерный цикл: от идеи и расчёта CFD до производства и наблюдения за живой рекой.</p>
+        <p><strong>«Гиперболоидный земснаряд»</strong> — это инновационное гидротехническое устройство для размыва и углубления русел рек. В основе — принцип ускорения водного потока в гиперболоидных конструкциях (сужение сечения → рост скорости → направленная струя, размывающая дно).</p>
+        <p>Проект предлагает три варианта исполнения, из которых оптимальным признан <strong>«Гипер-Тандем»</strong> — два последовательных гиперболоида с эжектором и поворотным соплом. Такая схема обеспечивает максимальную производительность при умеренных затратах.</p>
+        <p><strong>📐 Улучшенная геометрия:</strong> <a href="report.html">Открыть отчёт</a></p>
+        <p><strong>⚙️ CLI-конвейер:</strong> <a href="pipeline.html">Открыть документацию</a></p>
+        <p><strong>🏭 Производство:</strong> <a href="deploy.html">Открыть документацию</a></p>
     </section>
 
 
-    <!-- Полный пайплайн -->
     <section>
-        <h2>🔗 Полный пайплайн — 8 модулей</h2>
-        <div class="pipeline">
-<span class="stage">1. print</span>            → <span class="done">STL прототипа для 3D-печати</span>
-<span class="stage">2. validate</span>         → <span class="done">Валидация CFD по лабораторным данным</span>
-<span class="stage">3. calibrate</span>        → <span class="done">Коэффициенты потерь (K_in, K_throat, f_darcy)</span>
-<span class="stage">4. scale</span>            → <span class="done">Натурная геометрия и производительность</span>
-<span class="stage">5. deploy</span>           → <span class="done">Производственный пакет (BOM, чертежи, Gantt)</span>
-<span class="stage">6. eco-observe</span>      → <span class="new">ЭКО-станция (железо, сенсоры, якоря)</span>
-<span class="stage">7. ai-ichthyologist</span>  → <span class="new">ИИ-наблюдатель (видео + аудио + eDNA)</span>
-<span class="stage">8. dashboard</span>        → <span class="new">Живой дашборд реального времени 📺</span>
-        </div>
-        <div class="success-box">
-            <strong>Одна команда — полный цикл:</strong><br>
-            <code>python hyperdredger_pipeline.py all --workdir ./pechora</code>
-        </div>
-    </section>
-
-
-    <!-- Модуль 1-5: Земснаряд -->
-    <section>
-        <h2>🚢 Модули 1–5: Гиперболоидный земснаряд</h2>
-
-
-        <h3>⚙️ Технические характеристики</h3>
+        <h2>⚙️ Физика и гидродинамика</h2>
         <div class="grid-2">
             <div class="card">
-                <h4>Геометрия (оптимальная)</h4>
+                <h4>🔹 Принцип работы</h4>
                 <ul>
-                    <li>Гиперболоид №1: D_вх=10 м, D_горл=5 м, L=16 м, n=2.0</li>
-                    <li>Гиперболоид №2: D_вх=5 м, D_горл=4.08 м, L=11 м, n=1.9</li>
-                    <li>Сопло: угол 32°, высота 2 м, диаметр 1.2 м</li>
-                    <li>Платформа: катамаран 40×20×5 м</li>
+                    <li>Гиперболоид ускоряет поток</li>
+                    <li>Струя направляется в дно</li>
+                    <li>Размыв грунта под действием скорости</li>
+                    <li>Рабочая скорость струи: 25 м/с</li>
+                    <li>Кавитационный предел: 25 м/с</li>
                 </ul>
             </div>
             <div class="card">
-                <h4>Производительность</h4>
+                <h4>🔹 Критические скорости размыва</h4>
                 <ul>
-                    <li>Расход Q = 157 м³/с</li>
-                    <li>Скорость в горле v = 12 м/с</li>
-                    <li>Мощность струи P = 11.3 МВт</li>
-                    <li>Число кавитации σ = 1.49 (безопасно)</li>
-                    <li>Производительность = 10 848 м³/смену</li>
+                    <li>Мелкий песок: 0.3 м/с</li>
+                    <li>Средний песок: 0.6 м/с</li>
+                    <li>Гравий: 1.5 м/с</li>
+                    <li>Глина: 2.0 м/с</li>
+                    <li>Скала: 3.0 м/с</li>
                 </ul>
             </div>
         </div>
+    </section>
 
 
-        <h3>💰 Экономика</h3>
+    <section>
+        <h2>🧩 Варианты исполнения</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Вариант</th>
+                    <th>Конфигурация</th>
+                    <th>Производительность (м³/смена)</th>
+                    <th>CAPEX ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>A. Пассивный базовый</strong></td>
+                    <td>Один гиперболоид</td>
+                    <td>4 300</td>
+                    <td>1.7 млн</td>
+                </tr>
+                <tr>
+                    <td><strong>B. Активный насос</strong></td>
+                    <td>Гиперболоид + насос 5 МВт</td>
+                    <td>5 200</td>
+                    <td>2.9 млн</td>
+                </tr>
+                <tr style="background:#e6f0ff;">
+                    <td><strong>C. Тандем (оптимальный)</strong></td>
+                    <td>Два гиперболоида + эжектор</td>
+                    <td><strong>7 200–8 000</strong></td>
+                    <td><strong>2.5 млн</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>🏆 Оптимальный инвариант «Гипер-Тандем»</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h4>🔹 Конструкция</h4>
+                <ul>
+                    <li>Два гиперболоида (№1: Dвх=8, Dгорл=4, L=15; №2: Dвх=4, Dгорл=2.26, L=10)</li>
+                    <li>Эжектор кольцевой (D=2.5)</li>
+                    <li>Сопло керамическое поворотное (D=1, угол 30–45°)</li>
+                    <li>Платформа-катамаран 40×20×5 м</li>
+                    <li>Якоря: 2 носовых по 10 т, 2 кормовых по 5 т</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>🔹 Оборудование</h4>
+                <ul>
+                    <li>Лебёдки: 4 × 100 кВт с VFD</li>
+                    <li>Насос эжектора: 100 кВт осевой</li>
+                    <li>Материал гиперболоидов: AlSi10Mg (3D-печать)</li>
+                    <li>Условия работы: v ≥ 1.5 м/с, глубина 5–15 м</li>
+                    <li>Грунты: песок, ил, суглинок</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>📊 Экономика</h2>
+        <div class="highlight-box">
+            <ul style="list-style:none;padding-left:0;">
+                <li>✅ CAPEX (оптимальный вариант): <strong>$2 300 000</strong></li>
+                <li>✅ OPEX за смену: <strong>$8 500</strong></li>
+                <li>✅ Цена аренды за смену: <strong>$18 000</strong></li>
+                <li>✅ Прибыль за смену: <strong>$9 500</strong></li>
+                <li>✅ Сезон: <strong>180 дней</strong></li>
+                <li>✅ Прибыль за сезон: <strong>$1 710 000</strong></li>
+                <li>✅ Окупаемость: <strong>1.35 сезона</strong></li>
+            </ul>
+        </div>
+
+
+        <h3>Сравнение с традиционным земснарядом</h3>
         <table>
             <thead>
                 <tr>
                     <th>Параметр</th>
-                    <th>Значение</th>
+                    <th>Традиционный земснаряд</th>
+                    <th>Гипер-Тандем</th>
+                    <th>Экономия</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>CAPEX (оптимальный вариант)</td><td>$2 300 000</td></tr>
-                <tr><td>OPEX за смену</td><td>$8 500</td></tr>
-                <tr><td>Цена аренды за смену</td><td>$18 000</td></tr>
-                <tr><td>Прибыль за сезон (180 дней)</td><td>$1 710 000</td></tr>
-                <tr><td>Окупаемость</td><td>1.35 сезона</td></tr>
-                <tr><td>Экономия против традиционного</td><td>в 2–4 раза</td></tr>
+                <tr>
+                    <td>CAPEX</td>
+                    <td>$5–10 млн</td>
+                    <td>$2.3 млн</td>
+                    <td>в 2–4 раза</td>
+                </tr>
+                <tr>
+                    <td>Стоимость смены</td>
+                    <td>$30 000</td>
+                    <td>$18 000</td>
+                    <td>в 1.7 раза</td>
+                </tr>
             </tbody>
         </table>
+    </section>
 
 
-        <h3>🎯 Области применения</h3>
+    <section>
+        <h2>📋 Спецификация</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Узел</th>
+                    <th>Материал</th>
+                    <th>Параметры</th>
+                    <th>Кол-во</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Гиперболоид №1</td><td>AlSi10Mg (3D-печать)</td><td>Dвх=8, Dгорл=4, L=15</td><td>1</td></tr>
+                <tr><td>Гиперболоид №2</td><td>AlSi10Mg (3D-печать)</td><td>Dвх=4, Dгорл=2.26, L=10</td><td>1</td></tr>
+                <tr><td>Эжектор</td><td>Нерж. сталь</td><td>D=2.5, кольцевой</td><td>1</td></tr>
+                <tr><td>Сопло</td><td>Керамика</td><td>D=1, поворотное</td><td>1</td></tr>
+                <tr><td>Платформа</td><td>Сталь</td><td>40×20×5, катамаран</td><td>1</td></tr>
+                <tr><td>Якорь носовой</td><td>Сталь</td><td>10 т, Danforth</td><td>2</td></tr>
+                <tr><td>Якорь кормовой</td><td>Сталь</td><td>5 т, Danforth</td><td>2</td></tr>
+                <tr><td>Лебёдка</td><td>—</td><td>100 кВт, VFD</td><td>4</td></tr>
+                <tr><td>Насос эжектора</td><td>—</td><td>100 кВт, осевой</td><td>1</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>🎯 Области применения</h2>
         <div class="grid-3">
             <div class="card">
                 <h4>🌊 Реки</h4>
@@ -193,331 +239,70 @@
                 <h4>🏗️ Инфраструктура</h4>
                 <ul>
                     <li>Борьба с заилением у причалов</li>
-                    <li>Аварийное углубление</li>
-                    <li>Обслуживание ГТС</li>
+                    <li>Аварийное углубление после наводнений</li>
+                    <li>Обслуживание гидротехнических сооружений</li>
                 </ul>
             </div>
             <div class="card">
                 <h4>🌍 Экология</h4>
                 <ul>
                     <li>Восстановление водных путей</li>
-                    <li>Минимальное воздействие</li>
-                    <li>Улучшение проходимости</li>
+                    <li>Улучшение проходимости для судов</li>
+                    <li>Минимальное воздействие на экосистему</li>
                 </ul>
             </div>
         </div>
     </section>
 
 
-    <!-- Модуль 6: Эко-станция -->
     <section>
-        <h2>🐟 Модуль 6: Эко-гиперболоид — станция наблюдения</h2>
-        <p>Эко-станция — это отдельная плавучая установка, предназначенная для <strong>неинвазивного наблюдения за ихтиофауной</strong>. Она не ловит рыбу, а создаёт комфортную среду и собирает научные данные.</p>
-
-
-        <div class="grid-2">
-            <div class="card">
-                <h4>Назначение</h4>
-                <ul>
-                    <li>Аэрация воды в тёплый период</li>
-                    <li>Убежище и «точка очистки» для реофильных рыб</li>
-                    <li>Наблюдение через сенсоры (без отлова)</li>
-                    <li>Сбор данных для ихтиологии</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>Технические решения</h4>
-                <ul>
-                    <li>Гиперболоид: 3×1.5 м овал, горловина 1 м, длина 8 м</li>
-                    <li>Понтон 10×4 м, погружение 3 м</li>
-                    <li>2 гидрокрыла 2.5×1.2 м (стабилизация)</li>
-                    <li>Балласт 2.5 т</li>
-                    <li>2 якоря Danforth по 3 т (запас 9.6×)</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <h3>📡 Сенсорный комплекс (11 датчиков)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Датчик</th>
-                    <th>Роль</th>
-                    <th>Цена, $</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Гидрофон HTI-96-MIN</td><td>Акустика видов</td><td>4 500</td></tr>
-                <tr><td>Подводная камера 4K</td><td>Видео + ИИ</td><td>3 500</td></tr>
-                <tr><td>ИК-подсветка 850 нм</td><td>Ночное видео</td><td>1 200</td></tr>
-                <tr><td>Датчик O₂ (оптический)</td><td>Кислород</td><td>2 800</td></tr>
-                <tr><td>Термокоса (4 датчика)</td><td>Профиль T</td><td>900</td></tr>
-                <tr><td>ADCP 600 кГц</td><td>Скорости потока</td><td>12 000</td></tr>
-                <tr><td>eDNA-пробоотборник</td><td>ДНК-состав</td><td>6 000</td></tr>
-                <tr><td>Edge-ИИ (Jetson Orin)</td><td>Обработка</td><td>2 500</td></tr>
-                <tr><td>Starlink Maritime</td><td>Связь</td><td>5 000</td></tr>
-                <tr><td>Солнечная панель 2×3 м</td><td>Питание</td><td>1 800</td></tr>
-                <tr><td>Аккумуляторы LiFePO4</td><td>Питание</td><td>4 000</td></tr>
-                <tr style="background:#e6f0ff;"><td><strong>ИТОГО</strong></td><td></td><td><strong>44 200</strong></td></tr>
-            </tbody>
-        </table>
-
-
-        <div class="highlight-box">
-            <strong>Бюджет эко-станции:</strong> ~$180 000<br>
-            <strong>Окупаемость:</strong> 0.72 года научного гранта ($250 000/год)
-        </div>
-    </section>
-
-
-    <!-- Модуль 7: ИИ-ихтиолог -->
-    <section>
-        <h2>🤖 Модуль 7: ИИ-ихтиолог — распознавание без отлова</h2>
-        <p>ИИ-ихтиолог — это интеллектуальная система, которая <strong>распознаёт рыб по видео и звукам</strong>, идентифицирует уникальных особей, ведёт дневник наблюдений и публикует открытые данные.</p>
-
-
-        <div class="grid-3">
-            <div class="card">
-                <h4>🎬 Видео-ИИ</h4>
-                <ul>
-                    <li>Backbone: YOLOv8 + ResNet-50</li>
-                    <li>Распознавание видов, размеров, поведения</li>
-                    <li>Мин. уверенность: 0.65</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>🔊 Аудио-ИИ</h4>
-                <ul>
-                    <li>Backbone: CNN + Transformer</li>
-                    <li>Распознавание по вокализациям</li>
-                    <li>Спектрограмма n_fft=2048</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>🎯 Re-ID</h4>
-                <ul>
-                    <li>Backbone: OSNet</li>
-                    <li>Идентификация уникальных особей</li>
-                    <li>Порог схожести: 0.80</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <h3>🐟 Целевые виды (15)</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px 0;">
-            <span class="tag">Лосось атлантический (LC)</span>
-            <span class="tag">Кумжа (LC)</span>
-            <span class="tag">Хариус европейский (LC)</span>
-            <span class="tag">Сиг обыкновенный (LC)</span>
-            <span class="tag" style="background:#ffd6e0;color:#7a1f3d;">Нельма (EN) ★</span>
-            <span class="tag" style="background:#ffe0d6;color:#7a3d00;">Стерлядь (VU) ★</span>
-            <span class="tag">Щука обыкновенная (LC)</span>
-            <span class="tag">Окунь речной (LC)</span>
-            <span class="tag">Язь (LC)</span>
-            <span class="tag">Лещ (LC)</span>
-            <span class="tag">Плотва (LC)</span>
-            <span class="tag">Налим (LC)</span>
-            <span class="tag">Пелядь (LC)</span>
-            <span class="tag">Горбуша (LC)</span>
-            <span class="tag" style="background:#ffd6e0;color:#7a1f3d;">Таймень (VU) ★</span>
-        </div>
-
-
-        <h3>📊 Что формируется за сезон</h3>
-        <div class="grid-2">
-            <div class="card">
-                <h4>Артефакты</h4>
-                <ul>
-                    <li>raw_detections.csv — все детекции (~1000+)</li>
-                    <li>daily_log.csv — дневник 180 дней</li>
-                    <li>species_heatmap.png — карта активности</li>
-                    <li>ai_ichthyologist_report.txt — отчёт</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>Открытые данные</h4>
-                <ul>
-                    <li>detections.csv — публичный датасет</li>
-                    <li>metadata.json — Zenodo-формат</li>
-                    <li>DOI.txt — для цитирования</li>
-                    <li>Лицензия: CC-BY-4.0</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="success-box">
-            <strong>Этическое ядро модуля:</strong><br>
-            ✅ Рыба НЕ извлекается из воды<br>
-            ✅ Наблюдение неинвазивное (видео + аудио + eDNA)<br>
-            ✅ Данные открыты (CC-BY-4.0)<br>
-            ✅ Ни одной особи не пострадало<br>
-            ✅ Результаты доступны всем ихтиологам
-        </div>
-    </section>
-
-
-    <!-- Модуль 8: Дашборд -->
-    <section>
-        <h2>📺 Модуль 8: Живой дашборд реального времени</h2>
-        <p>Дашборд на <strong>Plotly Dash</strong> отображает всё, что происходит на станции, в реальном времени. Работает локально (localhost:8050) или в сети.</p>
-
-
-        <div class="grid-3">
-            <div class="card">
-                <h4>📊 Верхняя панель</h4>
-                <ul>
-                    <li>Всего детекций</li>
-                    <li>Уникальных видов</li>
-                    <li>Уникальных особей</li>
-                    <li>O₂ (сейчас)</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>📈 Графики</h4>
-                <ul>
-                    <li>Timeline детекций по видам</li>
-                    <li>T, O₂, поток (3 графика)</li>
-                    <li>Пирог видового состава</li>
-                    <li>Гистограмма уверенности</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>🚨 Алерты</h4>
-                <ul>
-                    <li>Редкие виды (★)</li>
-                    <li>Низкий O₂ (&lt;4 мг/л)</li>
-                    <li>Аномалии поведения</li>
-                    <li>Риск замора</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="highlight-box">
-            <strong>Запуск:</strong> <code>python hyperdredger_dashboard.py --workdir ./pechora</code><br>
-            <strong>Открыть:</strong> <a href="http://127.0.0.1:8050" target="_blank">http://127.0.0.1:8050</a><br>
-            <strong>Автообновление:</strong> каждые 5 секунд<br>
-            <strong>Темы:</strong> dark (по умолчанию) / light
-        </div>
-    </section>
-
-
-    <!-- Полная экономика -->
-    <section>
-        <h2>💰 Полная экономика экосистемы</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Компонент</th>
-                    <th>CAPEX</th>
-                    <th>Окупаемость</th>
-                    <th>Источник дохода</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Земснаряд (основной)</td>
-                    <td>$2.3 млн</td>
-                    <td>1.35 сезона</td>
-                    <td>Аренда $18k/смена</td>
-                </tr>
-                <tr>
-                    <td>Эко-станция</td>
-                    <td>$180k</td>
-                    <td>0.72 года</td>
-                    <td>Научные гранты</td>
-                </tr>
-                <tr>
-                    <td>ИИ-ихтиолог</td>
-                    <td>включено</td>
-                    <td>—</td>
-                    <td>Открытые данные, публикации</td>
-                </tr>
-                <tr>
-                    <td>Дашборд</td>
-                    <td>включено</td>
-                    <td>—</td>
-                    <td>Образование, мониторинг</td>
-                </tr>
-                <tr style="background:#e6f0ff;">
-                    <td><strong>ВСЕГО</strong></td>
-                    <td><strong>~$2.5 млн</strong></td>
-                    <td><strong>~1.5 сезона</strong></td>
-                    <td>Аренда + гранты</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-
-    <!-- Связь с другими проектами -->
-    <section>
-        <h2>🔗 Связь с другими проектами</h2>
+        <h2>💡 Преимущества</h2>
         <ul>
-            <li><strong>Гиперболоидная энерго-майнинговая установка</strong> — общий принцип гиперболоида</li>
-            <li><strong>Рыбное хозяйство РФ</strong> — продовольственная безопасность и климатический мониторинг</li>
-            <li><strong>Сельское хозяйство</strong> — беспилотники и ИИ в АПК</li>
-            <li><strong>Единый каркас экономики</strong> — речные пути как часть инфраструктуры</li>
-            <li><strong>Гироидная TPMS-решётка</strong> — лёгкие конструкции</li>
-            <li><strong>Инженерный переводчик</strong> — интеграция систем управления</li>
+            <li><strong>Дешевизна:</strong> CAPEX $2.3 млн против $5–10 млн у традиционных земснарядов</li>
+            <li><strong>Мобильность:</strong> возможность быстрого переброса между реками</li>
+            <li><strong>Экологичность:</strong> нет мощного дизеля, минимальные выбросы</li>
+            <li><strong>Простота:</strong> нет фрезерного рыхлителя — меньше износ</li>
+            <li><strong>Универсальность:</strong> работа на песке, иле, суглинке</li>
+            <li><strong>Быстрая окупаемость:</strong> 1.35 сезона</li>
         </ul>
     </section>
 
 
-    <!-- Перспективы -->
     <section>
-        <h2>🚀 Перспективы развития</h2>
-        <div class="grid-2">
-            <div class="card">
-                <h4>Технические</h4>
-                <ul>
-                    <li>Модуль 9: mobile-app (PWA для смартфона)</li>
-                    <li>Модуль 10: community (краудсорсинг от рыбаков)</li>
-                    <li>Модуль 11: policy (авто-отчёты для Росрыболовства)</li>
-                </ul>
+        <h2>🗺️ Дорожная карта</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 20px 0;">
+            <div style="background:#f3f7fe;padding:16px 20px;border-radius:16px;">
+                <strong>2026 Q3</strong><br>
+                <span style="font-size:.9rem;color:#1f3d64;">Моделирование в гидродинамическом ПО, оптимизация геометрии</span>
             </div>
-            <div class="card">
-                <h4>Научные</h4>
-                <ul>
-                    <li>Расширение на другие реки (Печора, Мезень, Онега)</li>
-                    <li>Интеграция с РАН и институтами биологии</li>
-                    <li>Публикации в «Вопросах ихтиологии»</li>
-                    <li>Открытые датасеты на Zenodo</li>
-                </ul>
+            <div style="background:#f3f7fe;padding:16px 20px;border-radius:16px;">
+                <strong>2026 Q4</strong><br>
+                <span style="font-size:.9rem;color:#1f3d64;">3D-печать уменьшенного прототипа, лабораторные испытания в лотке</span>
+            </div>
+            <div style="background:#f3f7fe;padding:16px 20px;border-radius:16px;">
+                <strong>2027 Q1–Q2</strong><br>
+                <span style="font-size:.9rem;color:#1f3d64;">Натурный прототип, испытания на реальной реке</span>
+            </div>
+            <div style="background:#f3f7fe;padding:16px 20px;border-radius:16px;">
+                <strong>2027 Q3+</strong><br>
+                <span style="font-size:.9rem;color:#1f3d64;">Сертификация, серийное производство, коммерциализация</span>
             </div>
         </div>
     </section>
 
 
-    <!-- Философия -->
     <section>
-        <h2>💫 Философия проекта</h2>
-        <div class="success-box">
-            <p><strong>Ты прошёл длинный путь:</strong></p>
-            <ul style="list-style:none;padding-left:0;">
-                <li>🌱 <strong>Юность:</strong> мечта о гиперболоидной ловушке</li>
-                <li>🌿 <strong>Зрелость:</strong> идея эко-наблюдения</li>
-                <li>🌳 <strong>Сегодня:</strong> ИИ, который знает рыб в лицо и не убивает ни одну</li>
-            </ul>
-            <p style="margin-top:16px;">Здесь: <strong>рыба живёт</strong>, <strong>ИИ учится</strong>, <strong>данные открыты</strong>, <strong>река дышит</strong>.</p>
-        </div>
+        <h2>🔗 Связь с другими проектами</h2>
+        <ul>
+            <li><strong>Гиперболоидная энерго-майнинговая установка</strong> — общий принцип гиперболоида</li>
+            <li><strong>Сессия ПГГЭС Арктика 2070</strong> — родительский проект</li>
+            <li><strong>Инженерный переводчик</strong> — интеграция систем управления</li>
+            <li><strong>Гироидная TPMS-решётка</strong> — облегчённые конструкции</li>
+            <li><strong>Единый каркас экономики</strong> — речные пути как часть инфраструктуры</li>
+        </ul>
     </section>
 
 
-    <!-- Хештеги -->
-    <div style="margin-top:36px;padding:18px 24px;background:#f0f5ff;border-radius:14px;text-align:center;">
-        <strong>Хештеги проекта:</strong><br>
-        <span class="tag">#HyperDredger_Optima_v1</span>
-        <span class="tag">#EcoHyperboloid_Observation_v1</span>
-        <span class="tag">#AI_Ichthyologist_v7</span>
-        <span class="tag">#EcoStation_Dashboard_v8</span>
-    </div>
-
-
-    <!-- Автор -->
     <div style="margin-top:48px;padding-top:24px;border-top:2px solid #dce5ef;">
         <p><strong>👤 Автор проекта:</strong> Андрей Чупров</p>
         <p><strong>ORCID:</strong> <a href="https://orcid.org/0009-0006-6753-5001" target="_blank">0009-0006-6753-5001</a></p>
@@ -529,9 +314,6 @@
     <div class="footer">
         <span>© 2026 Андрей Чупров</span>
         <span>
-            <a href="report.html">📐 Геометрия</a> · 
-            <a href="pipeline.html">⚙️ Конвейер</a> · 
-            <a href="deploy.html">🏭 Производство</a> · 
             <a href="https://github.com/Andrey777-ai" target="_blank">GitHub</a> · 
             <a href="https://orcid.org/0009-0006-6753-5001" target="_blank">ORCID</a>
         </span>
